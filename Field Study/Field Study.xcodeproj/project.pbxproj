@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		764A29A81F217C5A00004381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29A71F217C5A00004381 /* AppDelegate.swift */; };
+		764A29AD1F217C5A00004381 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764A29AB1F217C5A00004381 /* Main.storyboard */; };
+		764A29B01F217C5A00004381 /* Field_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 764A29AE1F217C5A00004381 /* Field_Study.xcdatamodeld */; };
+		764A29B21F217C5A00004381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764A29B11F217C5A00004381 /* Assets.xcassets */; };
+		764A29B51F217C5A00004381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764A29B31F217C5A00004381 /* LaunchScreen.storyboard */; };
+		764A29C01F217C5B00004381 /* Field_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29BF1F217C5B00004381 /* Field_StudyTests.swift */; };
+		764A29CB1F217C5B00004381 /* Field_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29CA1F217C5B00004381 /* Field_StudyUITests.swift */; };
+		764A29ED1F21B37700004381 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = 764A29EC1F21B37700004381 /* field_observations.json */; };
+		764A29EF1F21B3DE00004381 /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29EE1F21B3DE00004381 /* Observation.swift */; };
+		764A29F11F21B5AC00004381 /* FieldSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29F01F21B5AC00004381 /* FieldSurvey.swift */; };
+		764A29F31F21B7DF00004381 /* FieldSurveyJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29F21F21B7DF00004381 /* FieldSurveyJSONParser.swift */; };
+		764A29F51F21BBBD00004381 /* FieldSurveyJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29F41F21BBBD00004381 /* FieldSurveyJSONLoader.swift */; };
+		764A29F71F21BDD900004381 /* FieldObservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29F61F21BDD900004381 /* FieldObservationViewController.swift */; };
+		764A29F91F21BE2C00004381 /* FieldObservationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29F81F21BE2C00004381 /* FieldObservationDetailViewController.swift */; };
+		764A29FB1F21C2A500004381 /* FieldObservationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764A29FA1F21C2A500004381 /* FieldObservationTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		764A29BC1F217C5B00004381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764A299C1F217C5A00004381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764A29A31F217C5A00004381;
+			remoteInfo = "Field Study";
+		};
+		764A29C71F217C5B00004381 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 764A299C1F217C5A00004381 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764A29A31F217C5A00004381;
+			remoteInfo = "Field Study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		764A29A41F217C5A00004381 /* Field Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Field Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A29A71F217C5A00004381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		764A29AC1F217C5A00004381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		764A29AF1F217C5A00004381 /* Field_Study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Field_Study.xcdatamodel; sourceTree = "<group>"; };
+		764A29B11F217C5A00004381 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		764A29B41F217C5A00004381 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		764A29B61F217C5A00004381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A29BB1F217C5B00004381 /* Field StudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field StudyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A29BF1F217C5B00004381 /* Field_StudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_StudyTests.swift; sourceTree = "<group>"; };
+		764A29C11F217C5B00004381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A29C61F217C5B00004381 /* Field StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		764A29CA1F217C5B00004381 /* Field_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_StudyUITests.swift; sourceTree = "<group>"; };
+		764A29CC1F217C5B00004381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		764A29EC1F21B37700004381 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		764A29EE1F21B3DE00004381 /* Observation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		764A29F01F21B5AC00004381 /* FieldSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurvey.swift; sourceTree = "<group>"; };
+		764A29F21F21B7DF00004381 /* FieldSurveyJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONParser.swift; sourceTree = "<group>"; };
+		764A29F41F21BBBD00004381 /* FieldSurveyJSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldSurveyJSONLoader.swift; sourceTree = "<group>"; };
+		764A29F61F21BDD900004381 /* FieldObservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationViewController.swift; sourceTree = "<group>"; };
+		764A29F81F21BE2C00004381 /* FieldObservationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationDetailViewController.swift; sourceTree = "<group>"; };
+		764A29FA1F21C2A500004381 /* FieldObservationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldObservationTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		764A29A11F217C5A00004381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29B81F217C5B00004381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29C31F217C5B00004381 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		764A299B1F217C5A00004381 = {
+			isa = PBXGroup;
+			children = (
+				764A29A61F217C5A00004381 /* Field Study */,
+				764A29BE1F217C5B00004381 /* Field StudyTests */,
+				764A29C91F217C5B00004381 /* Field StudyUITests */,
+				764A29A51F217C5A00004381 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		764A29A51F217C5A00004381 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				764A29A41F217C5A00004381 /* Field Study.app */,
+				764A29BB1F217C5B00004381 /* Field StudyTests.xctest */,
+				764A29C61F217C5B00004381 /* Field StudyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		764A29A61F217C5A00004381 /* Field Study */ = {
+			isa = PBXGroup;
+			children = (
+				764A29E91F21B2DB00004381 /* Model */,
+				764A29A71F217C5A00004381 /* AppDelegate.swift */,
+				764A29AB1F217C5A00004381 /* Main.storyboard */,
+				764A29B11F217C5A00004381 /* Assets.xcassets */,
+				764A29B31F217C5A00004381 /* LaunchScreen.storyboard */,
+				764A29B61F217C5A00004381 /* Info.plist */,
+				764A29AE1F217C5A00004381 /* Field_Study.xcdatamodeld */,
+				764A29F61F21BDD900004381 /* FieldObservationViewController.swift */,
+				764A29F81F21BE2C00004381 /* FieldObservationDetailViewController.swift */,
+				764A29FA1F21C2A500004381 /* FieldObservationTableViewCell.swift */,
+			);
+			path = "Field Study";
+			sourceTree = "<group>";
+		};
+		764A29BE1F217C5B00004381 /* Field StudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				764A29BF1F217C5B00004381 /* Field_StudyTests.swift */,
+				764A29C11F217C5B00004381 /* Info.plist */,
+			);
+			path = "Field StudyTests";
+			sourceTree = "<group>";
+		};
+		764A29C91F217C5B00004381 /* Field StudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				764A29CA1F217C5B00004381 /* Field_StudyUITests.swift */,
+				764A29CC1F217C5B00004381 /* Info.plist */,
+			);
+			path = "Field StudyUITests";
+			sourceTree = "<group>";
+		};
+		764A29E91F21B2DB00004381 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				764A29EC1F21B37700004381 /* field_observations.json */,
+				764A29EE1F21B3DE00004381 /* Observation.swift */,
+				764A29F01F21B5AC00004381 /* FieldSurvey.swift */,
+				764A29F21F21B7DF00004381 /* FieldSurveyJSONParser.swift */,
+				764A29F41F21BBBD00004381 /* FieldSurveyJSONLoader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		764A29A31F217C5A00004381 /* Field Study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A29CF1F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field Study" */;
+			buildPhases = (
+				764A29A01F217C5A00004381 /* Sources */,
+				764A29A11F217C5A00004381 /* Frameworks */,
+				764A29A21F217C5A00004381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Field Study";
+			productName = "Field Study";
+			productReference = 764A29A41F217C5A00004381 /* Field Study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		764A29BA1F217C5B00004381 /* Field StudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A29D21F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field StudyTests" */;
+			buildPhases = (
+				764A29B71F217C5B00004381 /* Sources */,
+				764A29B81F217C5B00004381 /* Frameworks */,
+				764A29B91F217C5B00004381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				764A29BD1F217C5B00004381 /* PBXTargetDependency */,
+			);
+			name = "Field StudyTests";
+			productName = "Field StudyTests";
+			productReference = 764A29BB1F217C5B00004381 /* Field StudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		764A29C51F217C5B00004381 /* Field StudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 764A29D51F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field StudyUITests" */;
+			buildPhases = (
+				764A29C21F217C5B00004381 /* Sources */,
+				764A29C31F217C5B00004381 /* Frameworks */,
+				764A29C41F217C5B00004381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				764A29C81F217C5B00004381 /* PBXTargetDependency */,
+			);
+			name = "Field StudyUITests";
+			productName = "Field StudyUITests";
+			productReference = 764A29C61F217C5B00004381 /* Field StudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		764A299C1F217C5A00004381 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jaylin Phipps";
+				TargetAttributes = {
+					764A29A31F217C5A00004381 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VHR8SJQWXF;
+						ProvisioningStyle = Automatic;
+					};
+					764A29BA1F217C5B00004381 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VHR8SJQWXF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 764A29A31F217C5A00004381;
+					};
+					764A29C51F217C5B00004381 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = VHR8SJQWXF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 764A29A31F217C5A00004381;
+					};
+				};
+			};
+			buildConfigurationList = 764A299F1F217C5A00004381 /* Build configuration list for PBXProject "Field Study" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 764A299B1F217C5A00004381;
+			productRefGroup = 764A29A51F217C5A00004381 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				764A29A31F217C5A00004381 /* Field Study */,
+				764A29BA1F217C5B00004381 /* Field StudyTests */,
+				764A29C51F217C5B00004381 /* Field StudyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		764A29A21F217C5A00004381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A29B51F217C5A00004381 /* LaunchScreen.storyboard in Resources */,
+				764A29ED1F21B37700004381 /* field_observations.json in Resources */,
+				764A29B21F217C5A00004381 /* Assets.xcassets in Resources */,
+				764A29AD1F217C5A00004381 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29B91F217C5B00004381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29C41F217C5B00004381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		764A29A01F217C5A00004381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A29A81F217C5A00004381 /* AppDelegate.swift in Sources */,
+				764A29F71F21BDD900004381 /* FieldObservationViewController.swift in Sources */,
+				764A29F51F21BBBD00004381 /* FieldSurveyJSONLoader.swift in Sources */,
+				764A29EF1F21B3DE00004381 /* Observation.swift in Sources */,
+				764A29F11F21B5AC00004381 /* FieldSurvey.swift in Sources */,
+				764A29B01F217C5A00004381 /* Field_Study.xcdatamodeld in Sources */,
+				764A29FB1F21C2A500004381 /* FieldObservationTableViewCell.swift in Sources */,
+				764A29F31F21B7DF00004381 /* FieldSurveyJSONParser.swift in Sources */,
+				764A29F91F21BE2C00004381 /* FieldObservationDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29B71F217C5B00004381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A29C01F217C5B00004381 /* Field_StudyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		764A29C21F217C5B00004381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764A29CB1F217C5B00004381 /* Field_StudyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		764A29BD1F217C5B00004381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764A29A31F217C5A00004381 /* Field Study */;
+			targetProxy = 764A29BC1F217C5B00004381 /* PBXContainerItemProxy */;
+		};
+		764A29C81F217C5B00004381 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764A29A31F217C5A00004381 /* Field Study */;
+			targetProxy = 764A29C71F217C5B00004381 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		764A29AB1F217C5A00004381 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764A29AC1F217C5A00004381 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		764A29B31F217C5A00004381 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				764A29B41F217C5A00004381 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		764A29CD1F217C5B00004381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		764A29CE1F217C5B00004381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		764A29D01F217C5B00004381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		764A29D11F217C5B00004381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		764A29D31F217C5B00004381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Field Study.app/Field Study";
+			};
+			name = Debug;
+		};
+		764A29D41F217C5B00004381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Field Study.app/Field Study";
+			};
+			name = Release;
+		};
+		764A29D61F217C5B00004381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Field Study";
+			};
+			name = Debug;
+		};
+		764A29D71F217C5B00004381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VHR8SJQWXF;
+				INFOPLIST_FILE = "Field StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "JPhipps.Field-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Field Study";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		764A299F1F217C5A00004381 /* Build configuration list for PBXProject "Field Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A29CD1F217C5B00004381 /* Debug */,
+				764A29CE1F217C5B00004381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		764A29CF1F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A29D01F217C5B00004381 /* Debug */,
+				764A29D11F217C5B00004381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		764A29D21F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field StudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A29D31F217C5B00004381 /* Debug */,
+				764A29D41F217C5B00004381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		764A29D51F217C5B00004381 /* Build configuration list for PBXNativeTarget "Field StudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				764A29D61F217C5B00004381 /* Debug */,
+				764A29D71F217C5B00004381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		764A29AE1F217C5A00004381 /* Field_Study.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				764A29AF1F217C5A00004381 /* Field_Study.xcdatamodel */,
+			);
+			currentVersion = 764A29AF1F217C5A00004381 /* Field_Study.xcdatamodel */;
+			path = Field_Study.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 764A299C1F217C5A00004381 /* Project object */;
+}
